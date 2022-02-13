@@ -46,4 +46,4 @@ That's it!
 
 Copyright (c) 2022 Marc Reichel and contributors.
 
-Licensed under the MIT license, see [LICENSE.md](LICENSE) for details.
+Licensed under the MIT license, see [LICENSE](LICENSE) for details.
