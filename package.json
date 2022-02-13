@@ -1,0 +1,37 @@
+{
+  "name": "@marcreichel/alpine-autosize",
+  "version": "0.0.0",
+  "description": "A simple AlpineJS plugin for autosizing textareas",
+  "license": "MIT",
+  "author": {
+    "name": "Marc Reichel",
+    "url": "https://marcreichel.dev/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcreichel/alpine-autosize.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "bugs": {
+    "url": "https://github.com/marcreichel/alpine-autosize/issues"
+  },
+  "homepage": "https://github.com/marcreichel/alpine-autosize#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "rollup": "^2.67.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-filesize": "^9.1.2",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "src/index.js",
+    "package.json"
+  ]
+}
