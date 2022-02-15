@@ -1,6 +1,7 @@
 # Alpine Autosize
 
 ![version](https://img.shields.io/github/v/tag/marcreichel/alpine-autosize?label=version)
+![Build size](https://img.badgesize.io/marcreichel/alpine-autosize/main/dist/alpine-autosize.js.svg?compression=gzip&color=green)
 
 Automatically resize a `textarea` to fit its content.
 
