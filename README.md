@@ -42,6 +42,10 @@ To let the `textarea` automatically resize, add the `x-data` and `x-autosize` di
 
 That's it!
 
+## Known issues
+
+- When the textarea has a `wire:model` the size of the textarea is not calculated correctly. ([#1](https://github.com/marcreichel/alpine-autosize/issues/1))
+
 ## License
 
 Copyright (c) 2022 Marc Reichel and contributors.
