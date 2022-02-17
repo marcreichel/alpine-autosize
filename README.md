@@ -2,6 +2,7 @@
 
 ![version](https://img.shields.io/github/v/tag/marcreichel/alpine-autosize?label=version)
 ![Build size](https://img.badgesize.io/marcreichel/alpine-autosize/main/dist/alpine-autosize.js.svg?compression=gzip&color=green)
+[![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg)](https://gitmoji.dev)
 
 A little [Alpine.js](https://alpinejs.dev) plugin to automatically resize a `textarea` to fit its content.
 
