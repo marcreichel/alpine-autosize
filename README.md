@@ -1,12 +1,16 @@
-# Alpine Autosize
+<h1 align="center">↕️ Alpine Autosize ↕️</h1>
 
-![version](https://img.shields.io/github/v/tag/marcreichel/alpine-autosize?label=version)
-![Build size](https://img.badgesize.io/marcreichel/alpine-autosize/main/dist/alpine-autosize.js.svg?compression=gzip&color=green)
-[![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg)](https://gitmoji.dev)
+<p align="center">
+  <img src="https://img.shields.io/github/v/tag/marcreichel/alpine-autosize?label=version" alt="version">
+  <img src="https://img.badgesize.io/marcreichel/alpine-autosize/main/dist/alpine-autosize.js.svg?compression=gzip&color=green" alt="Build size">
+  <a href="https://gitmoji.dev/"><img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg"></a>
+</p>
 
-A little [Alpine.js](https://alpinejs.dev) plugin to automatically resize a `textarea` to fit its content.
+<p align="center">
+  A little <a href="https://alpinejs.dev">Alpine.js</a> plugin to automatically resize a <code>textarea</code> to fit its content.
+</p>
 
-## Installation
+## 🚀 Installation
 
 ### CDN
 
@@ -34,7 +38,7 @@ window.Alpine = Alpine;
 window.Alpine.start();
 ```
 
-## Usage
+## 🪄 Usage
 
 To let the `textarea` automatically resize, add the `x-data` and `x-autosize` directives to the `<textarea>`.
 
@@ -44,11 +48,11 @@ To let the `textarea` automatically resize, add the `x-data` and `x-autosize` di
 
 That's it!
 
-## Known issues
+## 🐛 Known issues
 
 - When the textarea has a `wire:model` the size of the textarea is not calculated correctly. ([#1](https://github.com/marcreichel/alpine-autosize/issues/1))
 
-## License
+## 📄 License
 
 Copyright (c) 2022 Marc Reichel and contributors.
 
