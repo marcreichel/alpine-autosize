@@ -32,6 +32,8 @@
     "LICENSE",
     "README.md",
     "src/index.js",
-    "package.json"
+    "package.json",
+    "dist/alpine-autosize.js",
+    "dist/alpine-autosize.js.map"
   ]
 }
