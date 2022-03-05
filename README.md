@@ -1,13 +1,25 @@
 <h1 align="center">↕️ Alpine Autosize ↕️</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/github/v/tag/marcreichel/alpine-autosize?label=version" alt="version">
-  <img src="https://img.badgesize.io/marcreichel/alpine-autosize/main/dist/alpine-autosize.js.svg?compression=gzip&color=green" alt="Build size">
-  <a href="https://gitmoji.dev/"><img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg"></a>
+  A little <a href="https://alpinejs.dev">Alpine.js</a> plugin to automatically resize a <code>textarea</code> to fit its content.
 </p>
 
 <p align="center">
-  A little <a href="https://alpinejs.dev">Alpine.js</a> plugin to automatically resize a <code>textarea</code> to fit its content.
+  <a href="https://www.npmjs.com/package/@marcreichel/alpine-autosize">
+    <img src="https://img.shields.io/github/v/tag/marcreichel/alpine-autosize?label=version" alt="version">
+  </a>
+  <a href="https://www.npmjs.com/package/@marcreichel/alpine-autosize">
+    <img src="https://img.badgesize.io/marcreichel/alpine-autosize/main/dist/alpine-autosize.js.svg?compression=gzip&color=green" alt="Build size">
+  </a>
+  <!--<a href="https://www.jsdelivr.com/package/npm/@marcreichel/alpine-autosize">
+    <img src="https://data.jsdelivr.com/v1/package/npm/@marcreichel/alpine-autosize/badge?style=rounded" alt="JSDelivr">
+  </a>-->
+  <a href="https://www.npmjs.com/package/@marcreichel/alpine-autosize">
+    <img alt="GitHub" src="https://img.shields.io/github/license/marcreichel/alpine-autosize">
+  </a>
+  <a href="https://gitmoji.dev/">
+    <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg">
+  </a>
 </p>
 
 ## 🚀 Installation
