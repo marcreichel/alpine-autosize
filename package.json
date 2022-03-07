@@ -26,14 +26,14 @@
     "rollup": "^2.67.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-filesize": "^9.1.2",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2"
   },
   "files": [
     "LICENSE",
     "README.md",
     "src/index.js",
     "package.json",
-    "dist/alpine-autosize.js",
-    "dist/alpine-autosize.js.map"
+    "dist"
   ]
 }
