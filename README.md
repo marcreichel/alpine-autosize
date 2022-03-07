@@ -11,9 +11,9 @@
   <a href="https://www.npmjs.com/package/@marcreichel/alpine-autosize">
     <img src="https://img.badgesize.io/marcreichel/alpine-autosize/main/dist/alpine-autosize.js.svg?compression=gzip&color=green" alt="Build size">
   </a>
-  <!--<a href="https://www.jsdelivr.com/package/npm/@marcreichel/alpine-autosize">
+  <a href="https://www.jsdelivr.com/package/npm/@marcreichel/alpine-autosize">
     <img src="https://data.jsdelivr.com/v1/package/npm/@marcreichel/alpine-autosize/badge?style=rounded" alt="JSDelivr">
-  </a>-->
+  </a>
   <a href="https://www.npmjs.com/package/@marcreichel/alpine-autosize">
     <img alt="GitHub" src="https://img.shields.io/github/license/marcreichel/alpine-autosize">
   </a>
