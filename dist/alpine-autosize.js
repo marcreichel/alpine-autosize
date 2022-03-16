@@ -9,6 +9,8 @@
       }) => {
         const previousResizeValue = el.style.resize;
         el.style.resize = 'none';
+        const previousMinHeight = el.style.minHeight;
+        el.style.minHeight = el.getBoundingClientRect().height + 'px';
 
         const handler = event => {
           const element = event.target;
@@ -22,6 +24,7 @@
         el.addEventListener('input', handler);
         cleanup(() => {
           el.style.resize = previousResizeValue;
+          el.style.minHeight = previousMinHeight;
           el.removeEventListener('input', handler);
         });
       });
