@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: ^16.0.0
-      - run: npm ci
+      - run: npm install
       - run: npm run build
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
@@ -30,7 +30,7 @@ jobs:
         uses: technote-space/package-version-check-action@v1
         with:
           COMMIT_DISABLED: 1
-      - run: npm ci
+      - run: npm install
       - run: npm run build
       - run: npm publish --access public
         env:
@@ -46,7 +46,7 @@ jobs:
         uses: technote-space/package-version-check-action@v1
         with:
           COMMIT_DISABLED: 1
-      - run: npm ci
+      - run: npm install
       - run: npm run build
       - uses: actions/setup-node@v2
         with:
