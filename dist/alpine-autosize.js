@@ -7,6 +7,10 @@
       Alpine.directive('autosize', (el, {}, {
         cleanup
       }) => {
+        if (el.hasAttribute('wire:model')) {
+          el.setAttribute('wire:ignore', '');
+        }
+
         const previousResizeValue = el.style.resize;
         el.style.resize = 'none';
         const previousMinHeight = el.style.minHeight;
