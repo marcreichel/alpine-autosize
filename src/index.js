@@ -1,7 +1,7 @@
 function Autosize(Alpine) {
     Alpine.directive('autosize', (el, {}, { cleanup }) => {
         
-        if (el.hasAttribute('wire:model')) {
+        if (!el.hasAttribute('wire:ignore') && el.hasAttribute('wire:model')) {
             el.setAttribute('wire:ignore', '');
         }
 
