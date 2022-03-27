@@ -10,6 +10,7 @@ function Autosize(Alpine) {
 
         const previousMinHeight = el.style.minHeight;
         el.style.minHeight = el.getBoundingClientRect().height + 'px';
+
         const handler = (event) => {
             const element = event.target;
             element.style.height = '4px';
