@@ -18,6 +18,11 @@
 
         const handler = event => {
           const element = event.target;
+
+          if (!element.scrollHeight) {
+            return;
+          }
+
           element.style.height = '4px';
           element.style.height = `${element.scrollHeight}px`;
         };
