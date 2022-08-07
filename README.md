@@ -41,7 +41,7 @@ Include the following `<script>` tag in the `<head>` of your document, just befo
 npm install @marcreichel/alpine-autosize
 ```
 
-Add the `x-autosize` directive to your project by importing the package **before** Alpine.js.
+Add the `x-autosize` directive to your project by importing the package **before** starting Alpine.
 
 ```js
 import Alpine from 'alpinejs';
@@ -49,8 +49,7 @@ import Autosize from '@marcreichel/alpine-autosize';
 
 Alpine.plugin(Autosize);
 
-window.Alpine = Alpine;
-window.Alpine.start();
+Alpine.start();
 ```
 
 ## 🪄 Usage
