@@ -7,7 +7,19 @@
       Alpine.directive('autosize', (el, {}, {
         cleanup
       }) => {
-        if (!el.hasAttribute('wire:ignore') && el.hasAttribute('wire:model')) {
+        const attributes = Array.from(el.attributes);
+        let hasWireModel = false;
+
+        for (let {
+          nodeName
+        } of attributes) {
+          if (nodeName === 'wire:model' || nodeName.startsWith('wire:model.')) {
+            hasWireModel = true;
+            break;
+          }
+        }
+
+        if (!el.hasAttribute('wire:ignore') && hasWireModel) {
           el.setAttribute('wire:ignore', '');
         }
 
