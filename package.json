@@ -25,6 +25,7 @@
     "@babel/preset-env": "^7.16.11",
     "@rollup/plugin-typescript": "^9.0.2",
     "@types/alpinejs": "^3.7.1",
+    "prettier": "^2.7.1",
     "rollup": "^2.67.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-filesize": "^9.1.2",
