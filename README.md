@@ -32,7 +32,10 @@
 Include the following `<script>` tag in the `<head>` of your document, just before Alpine.
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@marcreichel/alpine-autosize@latest/dist/alpine-autosize.min.js" defer></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/@marcreichel/alpine-autosize@latest/dist/alpine-autosize.min.js"
+    defer
+></script>
 ```
 
 ### NPM
