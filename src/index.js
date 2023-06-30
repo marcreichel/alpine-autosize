@@ -49,11 +49,9 @@ function Autosize(Alpine) {
         });
     });
 
-    Alpine.magic("autosize", () => (el) => {
-        if (!el) {
-            return;
-        }
-        el.dispatchEvent(new Event("autosize"));
+    Alpine.magic("autosize", (node) => (el) => {
+        const element = el || node;
+        element.dispatchEvent(new Event("autosize"));
     });
 }
 
