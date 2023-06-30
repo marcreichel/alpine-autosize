@@ -48,6 +48,13 @@ function Autosize(Alpine) {
             el.removeEventListener("autosize", handler);
         });
     });
+
+    Alpine.magic("autosize", () => (el) => {
+        if (!el) {
+            return;
+        }
+        el.dispatchEvent(new Event("autosize"));
+    });
 }
 
 export default Autosize;
