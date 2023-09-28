@@ -1,5 +1,8 @@
+import autosize from "autosize";
+
 function Autosize(Alpine) {
     Alpine.directive("autosize", (el, {modifiers}, {cleanup}) => {
+        autosize(el);
         const attributes = Array.from(el.attributes);
 
         let hasWireModel = false;
@@ -15,37 +18,15 @@ function Autosize(Alpine) {
             el.setAttribute("wire:ignore", "");
         }
 
-        const previousResizeValue = el.style.resize;
-        el.style.resize = "none";
-
-        const previousMinHeight = el.style.minHeight;
-        el.style.minHeight = `${el.getBoundingClientRect().height}px`;
-
-        const paddingModifier =
-            modifiers.filter((modifier) => modifier.match(/px$/i))[0] || false;
-        let padding = 0;
-        if (paddingModifier !== false) {
-            padding = parseInt(paddingModifier);
-        }
-
-        const handler = () => {
-            if (!el.scrollHeight) {
-                return;
-            }
-            el.style.height = "4px";
-            el.style.height = `${el.scrollHeight + padding}px`;
+        const update = () => {
+            autosize.update(el);
         };
 
-        handler();
-
-        el.addEventListener("input", handler);
-        el.addEventListener("autosize", handler);
+        el.addEventListener("autosize", update);
 
         cleanup(() => {
-            el.style.resize = previousResizeValue;
-            el.style.minHeight = previousMinHeight;
-            el.removeEventListener("input", handler);
-            el.removeEventListener("autosize", handler);
+            autosize.destroy(el);
+            el.removeEventListener("autosize", update);
         });
     });
 

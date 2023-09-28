@@ -20,6 +20,9 @@
     "url": "https://github.com/marcreichel/alpine-autosize/issues"
   },
   "homepage": "https://github.com/marcreichel/alpine-autosize#readme",
+  "dependencies": {
+    "autosize": "^6.0.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.17.2",
     "@babel/preset-env": "^7.16.11",
