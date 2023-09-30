@@ -60,19 +60,8 @@ To let the `textarea` automatically resize, add the `x-data` and `x-autosize` di
 <textarea x-data x-autosize></textarea>
 ```
 
-### ⏬ Additional height
-
-To add additional height to the textarea - which might be necessary in some occasions - you can do so using the
-"padding" modifier like so (only `px` values are supported):
-
-```html
-<textarea x-data x-autosize.10px></textarea>
-```
-
-This adds additional 10px to the textarea height. You can provide any integer which best suits your needs.
-
 ## 📄 License
 
-Copyright (c) 2022 Marc Reichel and contributors.
+Copyright (c) 2022 - 2023 Marc Reichel and contributors.
 
 Licensed under the MIT license, see [LICENSE](LICENSE) for details.
