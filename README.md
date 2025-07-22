@@ -54,11 +54,25 @@ Alpine.start();
 
 ## 🪄 Usage
 
-To let the `textarea` automatically resize, add the `x-data` and `x-autosize` directives to the `<textarea>`.
+### Directive
+
+To let the `textarea` automatically resize, add the `x-autosize` directive to the `<textarea>`.
 
 ```html
-<textarea x-data x-autosize></textarea>
+<textarea x-autosize></textarea>
 ```
+
+### Magic
+
+If you want to "manually" update the size of the textarea – for example after updating its content programatically – you may use the `$autosize` Alpine magic:
+
+```html
+<div x-data="{ text: '' }" x-init="$watch('text', () => { $nextTick(() => { $autosize($refs.input); }); })">
+    <textarea x-ref="input" x-model="text"></textarea>
+</div>
+```
+
+Just make sure, you call `$autosize($refs.input)` inside of a `$nextTick` for Alpine to update the DOM correctly.
 
 ## 📄 License
 
